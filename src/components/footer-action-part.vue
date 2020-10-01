@@ -108,6 +108,10 @@
     height: 65vh;
   }
 }
-
+/* @media (max-width: 1200px) {
+  .footer-action {
+    height: 40vh;
+  }
+} */
 
 </style>

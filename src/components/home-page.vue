@@ -374,7 +374,7 @@ export default {
         width: 50%;
         height: 100%;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
       }
   }
 }
@@ -500,6 +500,7 @@ export default {
           img {
             width: 100vw;
             height: 100vh;
+            object-fit: cover;
           }
           h2 {
             position: absolute;
@@ -696,10 +697,12 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
 
         .wrapper {
           display: flex;
           align-items: center;
+          justify-content: center;
           max-height: 100%;
           min-height: 500px;
           width: $main-width-content;
@@ -710,11 +713,13 @@ export default {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: calc(1200px - 40px);
+            /* width: calc(1200px - 40px); */
             padding: 0 20px;
 
             img {
+              width: 100%;
               max-width: 750px;
+              object-fit: cover;
             }
           }
           .step-slide {
@@ -774,6 +779,8 @@ export default {
 <style lang="scss" scoped>
   @media (max-width: 1200px) {
 
+    
+
     .content-nav-list {
       top: 40% !important;
       right: 0 !important;
@@ -788,14 +795,22 @@ export default {
       }
     }
 
-    
-
-    .steps-nav {
-      width: calc(100vw - 40px) !important;
+    .steps-nav, .step-nav {
+      width: 100% !important;
     }
   }
 
   @media (max-width: 800px) {
+    .shape-1 {
+      top: 70% !important;
+    }
+    .shape-2 {
+      width: 250px !important;
+      top: -10px !important;
+    }
+    .step-slide img {
+      max-width: 500px !important;
+    }
     .section-feature-1, .section-feature-3, .section-feature-5 {
       
       .section-feature-container {
@@ -846,6 +861,11 @@ export default {
         }
       }
 
+    }
+  }
+  @media (max-width: 520px) {
+    .step-slide img {
+      max-width: 350px !important;
     }
   }
 </style>

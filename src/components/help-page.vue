@@ -175,13 +175,13 @@ export default {
   }
 }
 
-.footer {
+/* .footer {
 
     .footer-container {
         min-width: 1156px;
         padding: 0 22px;
     }
-}
+} */
 </style>
 
 <style lang="scss" scoped>
@@ -320,5 +320,13 @@ export default {
         }
     }
 
+}
+</style>
+
+<style lang="scss">
+@media (max-width: 915px) {
+    .help-container-one, .help-container-second {
+        flex-direction: column;
+    }
 }
 </style>

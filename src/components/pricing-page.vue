@@ -200,14 +200,13 @@ export default {
     }
   }
 }
-
-.footer {
+/* .footer {
 
     .footer-container {
         min-width: 1156px;
         padding: 0 22px;
     }
-}
+} */
 </style>
 
 <style lang="scss" scoped>
@@ -217,6 +216,12 @@ export default {
     /* display: block !important; */
     height: 150px !important;
     opacity: 1 !important;
+    @media (max-width: 450px) {
+        height: 250px !important;
+    }
+    @media (max-width: 300px) {
+        height: 400px !important;
+    }
 }
 
 .background-img-minus {
@@ -504,4 +509,37 @@ export default {
 
 }
 
+</style>
+
+<style lang="scss">
+@media (max-width: 950px) {
+    .pricing-helper-container {
+        flex-direction: column;
+        h3 {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 900px) {
+    .pricing-content-container {
+        flex-wrap: wrap;
+
+        .plan-content:nth-child(3) {
+            max-width: initial !important;
+            margin-top: 30px;
+            margin-left: 0 !important;
+        }
+    }
+}
+@media (max-width: 735px) {
+    .plan-content {
+        max-width: initial !important;
+        margin-top: 30px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .plan-content:nth-child(2) {
+        margin-top: 50px;
+    }
+}
 </style>

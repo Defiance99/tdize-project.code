@@ -32,12 +32,8 @@
 
 .footer {
     display: flex;
-}
-
-.footer {
-    display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: 260px;
     background-color: $main-color;
 
@@ -74,23 +70,15 @@
 
 <style lang="scss">
 @media (max-width: 600px) {
-  .footer {
-    height: 300px;
-
-    .footer-container {
-      width: 90%;
-      flex-direction: column-reverse;
-      align-items: flex-start;
+  .footer-container {
+    flex-direction: column-reverse !important;
+    align-items: flex-start !important;
+    padding: 0 22px;
     
-      .left-side-footer {
-        padding-top: 30px;
+
+      .right-side-footer {
+
       }
-    }
-  }
-}
-@media (max-width: 410px) {
-  .footer {
-    height: 350px;
   }
 }
 </style>

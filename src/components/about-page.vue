@@ -227,6 +227,7 @@ export default {
         }
     }
 
+
 @keyframes float {
     0% {
         transform: translateY(0);
@@ -255,7 +256,8 @@ export default {
     .what-is-tidze-container {
         display: flex;
         justify-content: space-between;
-        min-width: 1160px;
+        width: 100%;
+        max-width: 1160px;
         padding: 0 20px;
         z-index: 10;
 
@@ -342,4 +344,46 @@ export default {
     }
 }
 
+</style>
+
+<style lang="scss">
+@media (max-width: 950px) {
+    .what-is-tidze-container {
+        flex-direction: column;
+
+        h2 {
+            margin-bottom: 25px !important;
+        }
+    }
+    .with-tidze-container {
+        flex-direction: column;
+
+        div {
+            margin-bottom: 40px !important;
+        }
+
+        .left-side {
+            max-width: initial !important;
+        }
+        .right-side {
+            max-width: initial !important;
+        }
+    }
+    .image-container {
+        img, div {
+            animation-name: floatX !important;
+        }
+    }
+    @keyframes floatX {
+        0% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translateX(-7px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
 </style>

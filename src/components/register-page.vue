@@ -175,3 +175,14 @@ div:first-child {
   background-repeat: no-repeat;
 }
 </style>
+
+<style lang="scss">
+@media (max-width: 950px) {
+  .register-block {
+    width: 100% !important;
+  }
+  .image-block {
+    display: none;
+  }
+}
+</style>
