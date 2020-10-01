@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@font-face {
+  font-family: 'Gilroy-font-bold';
+  src: url('../fonts/Gilroy-ExtraBold.otf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Gilroy-font-light';
+  src: url('../fonts/Gilroy-Light.otf');
+  font-weight: normal;
+}
+
+%open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+%gilroy-font-bold {
+  font-family: 'Gilroy-font-bold';
+}
+%gillroy-font-light {
+  font-family: 'Gilroy-font-light';
+}
+
+%content-width {
+  width: 40%;
+} 

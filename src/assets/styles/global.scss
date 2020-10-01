@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@font-face {
+  font-family: 'Gilroy-font-bold';
+  src: url('/@/assets/fonts/Gilroy-ExtraBold.otf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Gilroy-font-light';
+  src: url('/@/assets/fonts/Gilroy-Light.otf');
+  font-weight: normal;
+}
+
+$text-font: 'Open Sans', sans-serif;
+$header-font: 'Gilroy-font-bold';
+$text-bold-font: 'Gilroy-font-light';
+$main-width-content: 1200px;
+$main-color: #182743;
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@font-face {
+  font-family: 'Gilroy-font-bold';
+  src: url('../assets/fonts/Gilroy-ExtraBold.otf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Gilroy-font-light';
+  src: url('../assets/fonts/Gilroy-Light.otf');
+  font-weight: normal;
+}
+
+$text-font: 'Open Sans', sans-serif;
+$header-font: 'Gilroy-font-bold';
+$text-bold-font: 'Gilroy-font-light';
+$main-width-content: 1200px;
+$main-color: #182743; */

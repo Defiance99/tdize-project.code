@@ -1,28 +1,57 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <HomePage></HomePage> -->
+    <!-- <LoginPage/> -->
+    <!-- <RegisterPage/> -->
+    <!-- <PricingPage/> -->
+    <!-- <AboutPage/> -->
+    <!-- <HelpPage/> -->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import VueRouter from 'vue-router'
+import HomePage from '@/components/home-page.vue'
+import LoginPage from '@/components/login-page.vue'
+import RegisterPage from '@/components/register-page.vue'
+import PricingPage from '@/components/pricing-page'
+import AboutPage from '@/components/about-page'
+import HelpPage from '@/components/help-page'
+
+const routes = [
+  {path: '/', component: HomePage},
+  {path: '/login', component: LoginPage},
+  {path: '/register', component: RegisterPage},
+  {path: '/pricing', component: PricingPage},
+  {path: '/about', component: AboutPage},
+  {path: '/help', component: HelpPage},
+]
+
+const router = new VueRouter({
+  /* mode: 'history', */
+  routes: routes,
+  base: '/defiance99.github.io/tdize-project.github.io/'
+})
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    /* HomePage */
+    /* LoginPage */
+    /* RegisterPage */
+    /* PricingPage */
+    /* AboutPage */
+    /* HelpPage */
+  },
+  router: router,
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  html,body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
 </style>
